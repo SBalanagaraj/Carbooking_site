@@ -1,0 +1,211 @@
+// App Colors
+$DarkBlue: #10253a;
+$lightBlue: #627b94;
+$thinBlue: #233649;
+$greyClr: #495969;
+$white: #ffffff;
+$textBold: #222222;
+$lightGrey: #e0e0e0;
+$mediumGrey: #ebebeb;
+$textGrey: #999999;
+$textLightGrey: #435364;
+$red: #ec2027;
+
+// APP FONTS
+$MB: "Manrope-Bold";
+$MEB: "Manrope-ExtraBold";
+$ML: "Manrope-Light";
+$MM: "Manrope-Medium";
+$MR: "Manrope-Regular";
+$MSB: "Manrope-SemiBold";
+$AR: "Anton-Regular";
+$fonts: $MB, $ML, $MM, $MR, $MSB, $AR;
+
+@each $ff in $fonts {
+  @font-face {
+    font-family: "#{$ff}";
+    src: url("/public/fonts/#{$ff}.eot");
+    src: url("/public/fonts/#{$ff}.eot?#iefix") format("embedded-opentype"),
+      // url("/public/fonts/#{$ff}..otf") format("otf"),
+      // url("/public/fonts/#{$ff}.svg#OpenSans-Medium") format("svg"),
+      url("/public/fonts/#{$ff}.woff2") format("woff2"),
+      url("/public/fonts/#{$ff}.woff") format("woff"),
+      url("/public/fonts/#{$ff}.ttf") format("truetype");
+  }
+}
+
+// Breakpoints;
+$breakpoints: (
+  xs: 320px,
+  sm: 350px,
+  md: 450px,
+  lg: 550px,
+  phone: 650px,
+  tab-port: 767px,
+  tab-land: 881px,
+  laptop: 991px,
+  desktop: 1024px,
+  desktop-s: 1100px,
+  desktop-l: 1400px,
+);
+
+// BreakPoints Mixins;
+@mixin xs() {
+  @media (max-width: map-get($breakpoints,"xs")) {
+    @content;
+  }
+}
+@mixin sm() {
+  @media (max-width: map-get($breakpoints,"sm")) {
+    @content;
+  }
+}
+@mixin md() {
+  @media (max-width: map-get($breakpoints,"md")) {
+    @content;
+  }
+}
+@mixin lg() {
+  @media (max-width: map-get($breakpoints,"lg")) {
+    @content;
+  }
+}
+@mixin phone() {
+  @media (max-width: map-get($breakpoints,"phone")) {
+    @content;
+  }
+}
+@mixin tab-port() {
+  @media (max-width: map-get($breakpoints,"tab-port")) {
+    @content;
+  }
+}
+@mixin tab-land() {
+  @media (max-width: map-get($breakpoints,"tab-land")) {
+    @content;
+  }
+}
+@mixin laptop() {
+  @media (max-width: map-get($breakpoints,"laptop")) {
+    @content;
+  }
+}
+@mixin desktop() {
+  @media (max-width: map-get($breakpoints,"desktop")) {
+    @content;
+  }
+}
+@mixin desktop-s() {
+  @media (max-width: map-get($breakpoints,"desktop-s")) {
+    @content;
+  }
+}
+@mixin desktop-l() {
+  @media (max-width: map-get($breakpoints,"desktop-l")) {
+    @content;
+  }
+}
+
+// @Mixins
+
+@mixin center() {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin elementCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+@mixin trans() {
+  transition: all 0.5s ease-in;
+}
+
+@mixin container() {
+  width: 1350px;
+}
+
+// Common Styles
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+form,
+dl,
+dt,
+dd,
+ol,
+span,
+form {
+  padding: 0;
+  margin: 0;
+}
+
+input,
+input:focus {
+  background-color: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+textarea {
+  border: none;
+  overflow: auto;
+  resize: none;
+  outline: none;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+a,
+a:active,
+a:hover,
+a:focus {
+  text-decoration: none;
+  text-decoration-line: none;
+  outline: none;
+}
+
+a,
+span,
+strong,
+b,
+select {
+  display: inline-block;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+.container {
+  // max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}

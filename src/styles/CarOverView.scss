@@ -1,0 +1,146 @@
+@import "./index.scss";
+
+.container {
+  width: 100%;
+  .menuIcon {
+    position: absolute;
+    background-color: $textBold;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    top: 30%;
+    right: 0px;
+    padding-inline: 20px;
+    padding-block: 15px;
+  }
+
+  .bodyContainer {
+    background-color: $white;
+    padding-block: 60px;
+    width: 1350px;
+    display: flex;
+    margin: auto;
+    align-self: center;
+    position: relative;
+    .sideHead {
+      @include elementCenter("row");
+      justify-content: space-between;
+      width: 100%;
+
+      p {
+        font: 30px/45px $AR;
+        color: $textBold;
+        text-transform: uppercase;
+      }
+      .dropDowns {
+        @include center();
+        border: 1px solid #000;
+        padding-inline: 20px;
+        padding-block: 20px;
+        border-radius: 20px;
+        box-shadow: 3px 3px 3px 3px #2222;
+        background-color: $white;
+        justify-content: space-between;
+        border: 0.2px solid $mediumGrey;
+        &:hover {
+          .list {
+            display: flex;
+          }
+        }
+        span:nth-of-type(1) {
+          font: 15px/20px $MR;
+          color: $textBold;
+        }
+        span:nth-of-type(2) {
+          padding-inline: 5px;
+        }
+        span:nth-of-type(3) {
+          font: 20px/20px $MEB;
+          color: $textBold;
+          padding-right: 25px;
+          font-weight: bold;
+        }
+        .list {
+          display: none;
+          position: absolute;
+          flex-direction: column;
+          justify-content: center;
+          margin-top: 10px;
+          background-color: $white;
+          box-shadow: 2px 2px 2px 2px #2222;
+          border-radius: 10px;
+          @include trans();
+          top: 100px;
+          width: 100%;
+          span {
+            padding-inline: 20px;
+            padding-block: 10px;
+            font: 20px/20px $MEB;
+            color: $textBold;
+            padding-right: 25px;
+            text-align: start;
+          }
+        }
+      }
+    }
+  }
+}
+
+.close {
+  position: absolute;
+  right: 400px;
+  top: 50%;
+  background-color: $mediumGrey;
+  padding-inline: 20px;
+  padding-block: 10px;
+  z-index: 100;
+  margin: auto;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.drawerScreen {
+  padding-inline: 40px;
+  padding-block: 40px;
+  @include center();
+  flex-direction: column;
+
+  .sideHead {
+    @include center();
+    width: 100%;
+    span {
+      font: 20px/30px $MR;
+      color: $textBold;
+    }
+    .reset {
+      @include center();
+      span {
+        color: $red;
+        font: 22px/30px $MB;
+        padding-left: 5px;
+      }
+    }
+  }
+  .filters {
+    width: 100%;
+    border-bottom: 0.5px solid #2222;
+    padding-bottom: 20px;
+    &:last-child {
+      border-bottom: 0px;
+    }
+    .sideHead {
+      @include center();
+      padding-top: 35px;
+      padding-bottom: 20px;
+      span {
+        font: 25px/30px $AR;
+        color: $textBold;
+      }
+    }
+    .checklist {
+      input {
+        padding: 3px;
+        background-color: $textBold;
+      }
+    }
+  }
+}

@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url("/public/fonts/Manrope-Bold.eot");
+  src: url("/public/fonts/Manrope-Bold.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-Bold.woff2") format("woff2"), url("/public/fonts/Manrope-Bold.woff") format("woff"), url("/public/fonts/Manrope-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Light";
+  src: url("/public/fonts/Manrope-Light.eot");
+  src: url("/public/fonts/Manrope-Light.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-Light.woff2") format("woff2"), url("/public/fonts/Manrope-Light.woff") format("woff"), url("/public/fonts/Manrope-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url("/public/fonts/Manrope-Medium.eot");
+  src: url("/public/fonts/Manrope-Medium.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-Medium.woff2") format("woff2"), url("/public/fonts/Manrope-Medium.woff") format("woff"), url("/public/fonts/Manrope-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url("/public/fonts/Manrope-Regular.eot");
+  src: url("/public/fonts/Manrope-Regular.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-Regular.woff2") format("woff2"), url("/public/fonts/Manrope-Regular.woff") format("woff"), url("/public/fonts/Manrope-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: url("/public/fonts/Manrope-SemiBold.eot");
+  src: url("/public/fonts/Manrope-SemiBold.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-SemiBold.woff2") format("woff2"), url("/public/fonts/Manrope-SemiBold.woff") format("woff"), url("/public/fonts/Manrope-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Anton-Regular";
+  src: url("/public/fonts/Anton-Regular.eot");
+  src: url("/public/fonts/Anton-Regular.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Anton-Regular.woff2") format("woff2"), url("/public/fonts/Anton-Regular.woff") format("woff"), url("/public/fonts/Anton-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+form,
+dl,
+dt,
+dd,
+ol,
+span,
+form {
+  padding: 0;
+  margin: 0;
+}
+
+input,
+input:focus {
+  background-color: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+textarea {
+  border: none;
+  overflow: auto;
+  resize: none;
+  outline: none;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+a,
+a:active,
+a:hover,
+a:focus {
+  text-decoration: none;
+  text-decoration-line: none;
+  outline: none;
+}
+
+a,
+span,
+strong,
+b,
+select {
+  display: inline-block;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.topSection {
+  background-color: #10253a;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+}
+.topSection .topSecCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1350px;
+  padding-block: 5px;
+}
+.topSection .topSecCont .leftCon {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 650px) {
+  .topSection .topSecCont .leftCon {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.topSection .topSecCont .rightCont {
+  padding-block: 10px;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  background-color: #627b94;
+  align-self: center;
+  font-size: 22px/25px;
+  font-family: "Manrope-Bold";
+  text-align: center;
+  color: #ffffff;
+}
+.topSection .topSecCont .rightCont::-moz-placeholder {
+  color: #ffffff;
+}
+.topSection .topSecCont .rightCont::placeholder {
+  color: #ffffff;
+}
+
+.selection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #233649;
+  padding-right: 10px;
+  padding-left: 5px;
+  padding-block: 5px;
+  margin-right: 5px;
+  border-radius: 5px;
+  width: 220px;
+}
+@media (max-width: 650px) {
+  .selection {
+    width: 100%;
+    margin-left: 15px;
+  }
+}
+.selection span:first-child {
+  font: 13px/18px "Manrope-Regular";
+  color: #999999;
+}
+.selection span:last-child {
+  font: 16px/18px "Manrope-Medium";
+  color: #ffffff;
+}
+
+.bannerBlock {
+  padding-block: 30px;
+  background-image: url("../../public/images/imgBG.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.bannerBlock .container {
+  width: 1350px;
+}
+.bannerBlock .container h1 {
+  font: 30px/50px "Anton-Regular";
+  color: #ffffff;
+}
+.bannerBlock .container p {
+  font: 10px/20px "Manrope-Regular";
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+}/*# sourceMappingURL=components.css.map */

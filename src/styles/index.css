@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url("/public/fonts/Manrope-Bold.eot");
+  src: url("/public/fonts/Manrope-Bold.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-Bold.woff2") format("woff2"), url("/public/fonts/Manrope-Bold.woff") format("woff"), url("/public/fonts/Manrope-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Light";
+  src: url("/public/fonts/Manrope-Light.eot");
+  src: url("/public/fonts/Manrope-Light.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-Light.woff2") format("woff2"), url("/public/fonts/Manrope-Light.woff") format("woff"), url("/public/fonts/Manrope-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url("/public/fonts/Manrope-Medium.eot");
+  src: url("/public/fonts/Manrope-Medium.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-Medium.woff2") format("woff2"), url("/public/fonts/Manrope-Medium.woff") format("woff"), url("/public/fonts/Manrope-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url("/public/fonts/Manrope-Regular.eot");
+  src: url("/public/fonts/Manrope-Regular.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-Regular.woff2") format("woff2"), url("/public/fonts/Manrope-Regular.woff") format("woff"), url("/public/fonts/Manrope-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: url("/public/fonts/Manrope-SemiBold.eot");
+  src: url("/public/fonts/Manrope-SemiBold.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-SemiBold.woff2") format("woff2"), url("/public/fonts/Manrope-SemiBold.woff") format("woff"), url("/public/fonts/Manrope-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Anton-Regular";
+  src: url("/public/fonts/Anton-Regular.eot");
+  src: url("/public/fonts/Anton-Regular.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Anton-Regular.woff2") format("woff2"), url("/public/fonts/Anton-Regular.woff") format("woff"), url("/public/fonts/Anton-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+form,
+dl,
+dt,
+dd,
+ol,
+span,
+form {
+  padding: 0;
+  margin: 0;
+}
+
+input,
+input:focus {
+  background-color: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+textarea {
+  border: none;
+  overflow: auto;
+  resize: none;
+  outline: none;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+a,
+a:active,
+a:hover,
+a:focus {
+  text-decoration: none;
+  text-decoration-line: none;
+  outline: none;
+}
+
+a,
+span,
+strong,
+b,
+select {
+  display: inline-block;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}/*# sourceMappingURL=index.css.map */
