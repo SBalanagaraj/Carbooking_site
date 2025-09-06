@@ -1,0 +1,261 @@
+@font-face {
+  font-family: "Manrope-Bold";
+  src: url("/public/fonts/Manrope-Bold.eot");
+  src: url("/public/fonts/Manrope-Bold.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-Bold.woff2") format("woff2"), url("/public/fonts/Manrope-Bold.woff") format("woff"), url("/public/fonts/Manrope-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Light";
+  src: url("/public/fonts/Manrope-Light.eot");
+  src: url("/public/fonts/Manrope-Light.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-Light.woff2") format("woff2"), url("/public/fonts/Manrope-Light.woff") format("woff"), url("/public/fonts/Manrope-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Medium";
+  src: url("/public/fonts/Manrope-Medium.eot");
+  src: url("/public/fonts/Manrope-Medium.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-Medium.woff2") format("woff2"), url("/public/fonts/Manrope-Medium.woff") format("woff"), url("/public/fonts/Manrope-Medium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-Regular";
+  src: url("/public/fonts/Manrope-Regular.eot");
+  src: url("/public/fonts/Manrope-Regular.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-Regular.woff2") format("woff2"), url("/public/fonts/Manrope-Regular.woff") format("woff"), url("/public/fonts/Manrope-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Manrope-SemiBold";
+  src: url("/public/fonts/Manrope-SemiBold.eot");
+  src: url("/public/fonts/Manrope-SemiBold.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Manrope-SemiBold.woff2") format("woff2"), url("/public/fonts/Manrope-SemiBold.woff") format("woff"), url("/public/fonts/Manrope-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Anton-Regular";
+  src: url("/public/fonts/Anton-Regular.eot");
+  src: url("/public/fonts/Anton-Regular.eot?#iefix") format("embedded-opentype"), url("/public/fonts/Anton-Regular.woff2") format("woff2"), url("/public/fonts/Anton-Regular.woff") format("woff"), url("/public/fonts/Anton-Regular.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+li,
+form,
+dl,
+dt,
+dd,
+ol,
+span,
+form {
+  padding: 0;
+  margin: 0;
+}
+
+input,
+input:focus {
+  background-color: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+button {
+  border: none;
+  background: none;
+  outline: none;
+}
+
+textarea {
+  border: none;
+  overflow: auto;
+  resize: none;
+  outline: none;
+}
+
+select {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+a,
+a:active,
+a:hover,
+a:focus {
+  text-decoration: none;
+  text-decoration-line: none;
+  outline: none;
+}
+
+a,
+span,
+strong,
+b,
+select {
+  display: inline-block;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+.container .menuIcon {
+  position: absolute;
+  background-color: #222222;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  top: 30%;
+  right: 0px;
+  padding-inline: 20px;
+  padding-block: 15px;
+}
+.container .bodyContainer {
+  background-color: #ffffff;
+  padding-block: 60px;
+  width: 1350px;
+  display: flex;
+  margin: auto;
+  align-self: center;
+  position: relative;
+}
+.container .bodyContainer .sideHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: "row";
+  justify-content: space-between;
+  width: 100%;
+}
+.container .bodyContainer .sideHead p {
+  font: 30px/45px "Anton-Regular";
+  color: #222222;
+  text-transform: uppercase;
+}
+.container .bodyContainer .sideHead .dropDowns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #000;
+  padding-inline: 20px;
+  padding-block: 20px;
+  border-radius: 20px;
+  box-shadow: 3px 3px 3px 3px rgba(34, 34, 34, 0.1333333333);
+  background-color: #ffffff;
+  justify-content: space-between;
+  border: 0.2px solid #ebebeb;
+}
+.container .bodyContainer .sideHead .dropDowns:hover .list {
+  display: flex;
+}
+.container .bodyContainer .sideHead .dropDowns span:nth-of-type(1) {
+  font: 15px/20px "Manrope-Regular";
+  color: #222222;
+}
+.container .bodyContainer .sideHead .dropDowns span:nth-of-type(2) {
+  padding-inline: 5px;
+}
+.container .bodyContainer .sideHead .dropDowns span:nth-of-type(3) {
+  font: 20px/20px "Manrope-ExtraBold";
+  color: #222222;
+  padding-right: 25px;
+  font-weight: bold;
+}
+.container .bodyContainer .sideHead .dropDowns .list {
+  display: none;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 2px 2px rgba(34, 34, 34, 0.1333333333);
+  border-radius: 10px;
+  transition: all 0.5s ease-in;
+  top: 100px;
+  width: 100%;
+}
+.container .bodyContainer .sideHead .dropDowns .list span {
+  padding-inline: 20px;
+  padding-block: 10px;
+  font: 20px/20px "Manrope-ExtraBold";
+  color: #222222;
+  padding-right: 25px;
+  text-align: start;
+}
+
+.close {
+  position: absolute;
+  right: 400px;
+  top: 50%;
+  background-color: #ebebeb;
+  padding-inline: 20px;
+  padding-block: 10px;
+  z-index: 100;
+  margin: auto;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.drawerScreen {
+  padding-inline: 40px;
+  padding-block: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.drawerScreen .sideHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.drawerScreen .sideHead span {
+  font: 20px/30px "Manrope-Regular";
+  color: #222222;
+}
+.drawerScreen .sideHead .reset {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.drawerScreen .sideHead .reset span {
+  color: #ec2027;
+  font: 22px/30px "Manrope-Bold";
+  padding-left: 5px;
+}
+.drawerScreen .filters {
+  width: 100%;
+  border-bottom: 0.5px solid rgba(34, 34, 34, 0.1333333333);
+  padding-bottom: 20px;
+}
+.drawerScreen .filters:last-child {
+  border-bottom: 0px;
+}
+.drawerScreen .filters .sideHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-bottom: 20px;
+}
+.drawerScreen .filters .sideHead span {
+  font: 25px/30px "Anton-Regular";
+  color: #222222;
+}
+.drawerScreen .filters .checklist input {
+  padding: 3px;
+  background-color: #222222;
+}/*# sourceMappingURL=CarOverView.css.map */
